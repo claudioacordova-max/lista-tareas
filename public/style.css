@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf9f0;
+}
+
+.container {
+  background-color: #fffef9;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form-container label {
+  padding: 0.5rem;
+}
+
+.form-container input {
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.form-container button {
+  color: white;
+  border: none;
+  background-color: #3e8bc2;
+  padding: 0.57rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-container button:active {
+  background-color: #2f6f9c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+.form-container button:hover {
+  background-color: #4ba1df;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.to-do-container {
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.to-do-container article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.to-do-container div {
+  padding: 0 1rem;
+}
+.to-do-container :first-child {
+  text-align: left;
+}
+.to-do-container article p {
+  padding: 0;
+}
+.to-do-container article button {
+  color: white;
+  border: none;
+  background-color: #ff857f;
+  padding: 0.57rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.to-do-container article button:hover {
+  background-color: #ff6e67;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.to-do-container article button:active {
+  background-color: #ff5a53;
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.color1 {
+  background-color: #fef8cd;
+  border: 2px solid #feeb9d;
+}
+.color2 {
+  background-color: #e8f7e2;
+  border: 2px solid #c8e8c5;
+}
+.color3 {
+  background-color: #dff4f8;
+  border: 2px solid #b3dff0;
+}
+.color4 {
+  background-color: #ffe2d9;
+  border: 2px solid #ffc6bb;
+}

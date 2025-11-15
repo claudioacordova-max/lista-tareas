@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Lista de Tareas</h1>
+      <section class="form-container">
+        <form id="form">
+          <label for="nombre">
+            <input type="text" id="nombre" placeholder="Nombre" />
+          </label>
+          <label for="descripcion">
+            <input type="text" id="descripcion" placeholder="Descripción" />
+          </label>
+          <button type="button" id="crear">Crear</button>
+        </form>
+      </section>
+      <section id="to-do-container" class="to-do-container"></section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
