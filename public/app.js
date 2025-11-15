@@ -1,13 +1,13 @@
 //llamadas api
 
 async function getTareas() {
-  const response = await fetch("http://localhost:8000/tareas");
+  const response = await fetch("https://lista-tareas-42fh.onrender.com/tareas");
   const data = await response.json();
   return data;
 }
 
 async function postTarea(tarea) {
-  const response = await fetch("http://localhost:8000/tarea", {
+  const response = await fetch("https://lista-tareas-42fh.onrender.com/tarea", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -19,21 +19,27 @@ async function postTarea(tarea) {
 }
 
 async function putTarea(id, color) {
-  const response = await fetch(`http://localhost:8000/tarea/${id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(color),
-  });
+  const response = await fetch(
+    `https://lista-tareas-42fh.onrender.com/tarea/${id}`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(color),
+    }
+  );
   const data = response.json();
   return data;
 }
 
 async function deleteTarea(id) {
-  const response = await fetch(`http://localhost:8000/tarea/${id}`, {
-    method: "DELETE",
-  });
+  const response = await fetch(
+    `https://lista-tareas-42fh.onrender.com/tarea/${id}`,
+    {
+      method: "DELETE",
+    }
+  );
   const data = response.json();
   return data;
 }
