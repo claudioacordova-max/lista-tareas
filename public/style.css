@@ -7,10 +7,16 @@ body {
   background-color: #fbf9f0;
 }
 
+header {
+  padding: 1rem;
+}
+
 .container {
   background-color: #fffef9;
-  margin: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
   padding: 1rem;
+  width: 900px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -113,4 +119,23 @@ body {
 .color4 {
   background-color: #ffe2d9;
   border: 2px solid #ffc6bb;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: auto;
+  }
+
+  .form-container input {
+    display: block;
+  }
+
+  .form-container button {
+    display: block;
+  }
+  .form-container {
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    padding-top: 0;
+  }
 }
